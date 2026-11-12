@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 })
 //Tipescript - Java Script - Orientada a objetos ------La programación
 export class Presentacion {
-  //Atributos
-  nombre:string='Gloria Gonzalez';
-  carrera:string='Ingenieria en sistemas computacionales';
-  semestre:number=7;
-  institución:string='UPIIZ-IPN';
-  correo:string='ggonzalezt2201@alumno.ipn.mx';
-  mensaje:string='Soy ingeniera en sistemas computacionales';
-  habilidades:string[]=
-  [
+  // Atributos
+  nombre: string = 'Gloria Gonzalez';
+  carrera: string = 'Ingenieria en sistemas computacionales';
+  semestre: number = 7;
+  institución: string = 'UPIIZ-IPN';
+  correo: string = 'ggonzalezt2201@alumno.ipn.mx';
+  mensaje: string = 'Soy ingeniera en sistemas computacionales';
+  
+  habilidades: string[] = [
     'java',
     'Spring boot',
     'html',
@@ -25,14 +25,18 @@ export class Presentacion {
     'c',
     'Base de datos'
   ];
-  edad:number=22;
-  idiomas:string[]=[
-    'Español','ingles'
+  
+  edad: number = 22;
+  
+  idiomas: string[] = [
+    'Español', 'ingles'
   ];
-  misIntereses:string[]=
-  [
-    'Leer','Videos','Cantar','Escuchar música'
+
+  // Cambiado de 'misIntereses' a 'intereses' para que coincida con el HTML
+  intereses: string[] = [
+    'Leer', 'Videos', 'Cantar', 'Escuchar música'
   ];
   
   githubUrl = 'https://github.com/gloria0094';
+  linkedinUrl = 'https://linkedin.com'; // Agregado para que no falle el enlace de LinkedIn
 }
