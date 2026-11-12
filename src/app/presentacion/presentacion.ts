@@ -37,6 +37,5 @@ export class Presentacion {
     'Leer', 'Videos', 'Cantar', 'Escuchar música'
   ];
   
-  githubUrl = 'https://github.com/gloria0094';
-  linkedinUrl = 'https://linkedin.com'; // Agregado para que no falle el enlace de LinkedIn
+  githubUrl = 'https://github.com/gloria0094/eje-glgt-10'; 
 }
