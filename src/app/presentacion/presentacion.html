@@ -1,0 +1,10 @@
+<div>
+    <p>Nombre: {{ nombre }}</p>
+    <p>Carrera: {{ carrera }}</p>
+    <p>Habilidad:</p>
+        <ol>
+        @for(habilidad of habilidades;track $index){
+            <li>{{ habilidad }}</li>
+        }
+        </ol>
+</div>

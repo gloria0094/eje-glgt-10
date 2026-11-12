@@ -1,0 +1,62 @@
+/* Centrar todo en la pantalla con un fondo sutil */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Tarjeta principal estilo "Card" */
+div {
+  background: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo para los textos de nombre y carrera */
+p {
+  color: #1e293b;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Título de Habilidad */
+p:nth-of-type(3) {
+  margin-top: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #64748b;
+}
+
+/* Lista de habilidades en formato de etiquetas (píldoras) */
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+ol li {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
