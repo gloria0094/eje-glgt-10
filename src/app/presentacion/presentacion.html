@@ -14,5 +14,16 @@
             <li>{{ idioma }}</li>
         }
         </ol>
-  
+    <p>Mis Intereses:</p>
+        <ol>
+          @for(interes of intereses; track $index){
+            <li>{{ interes }}</li>
+          }
+        </ol>
+
+  <!-- Enlaces a Perfiles -->
+  <div class="social-links">
+    <a [href]="githubUrl" target="_blank" class="social-btn">GitHub</a>
+    <a [href]="linkedinUrl" target="_blank" class="social-btn">LinkedIn</a>
+  </div> 
 </div>
