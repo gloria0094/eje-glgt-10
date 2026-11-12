@@ -24,5 +24,13 @@ export class Presentacion {
     'angular',
     'c',
     'Base de datos'
-  ]
+  ];
+  edad:number=22;
+  idiomas:string[]=[
+    'Español','ingles'
+  ];
+  misIntereses:string[]=
+  [
+    'Leer','Videos','Cantar','Escuchar música'
+  ];
 }
