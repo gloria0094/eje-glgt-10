@@ -1,4 +1,4 @@
-/* Centrar todo en la pantalla con un fondo sutil */
+/* Centrar todo en la tarjeta con un fondo sutil */
 :host {
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-/* Tarjeta principal estilo "Card" */
+/* Contenedor principal estilo "Card" */
 div {
   background: #ffffff;
   width: 100%;
@@ -19,30 +19,34 @@ div {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Estilo para los textos de nombre y carrera */
+/* Estilo general para los párrafos */
 p {
   color: #1e293b;
-  font-size: 16px;
-  margin-bottom: 12px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
-p:first-child {
+/* Destacar el Nombre (primer párrafo) */
+p:nth-child(1) {
   font-size: 20px;
   font-weight: bold;
   color: #0f172a;
 }
 
-/* Título de Habilidad */
-p:nth-of-type(3) {
-  margin-top: 20px;
+/* Estilo para los subtítulos de listas y datos */
+p:nth-child(4),
+p:nth-child(7),
+p:nth-child(10) {
+  margin-top: 18px;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.5px;
   color: #64748b;
+  margin-bottom: 8px;
 }
 
-/* Lista de habilidades en formato de etiquetas (píldoras) */
+/* Listas ordenadas transformadas en etiquetas (píldoras) */
 ol {
   list-style: none;
   padding: 0;
@@ -59,4 +63,34 @@ ol li {
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
+}
+
+/* Estilo para los botones de redes sociales */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  text-decoration: none;
+  background-color: #0f172a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #334155;
+}
+
+/* Ajuste Responsivo (Media Query) */
+@media (max-width: 600px) {
+  div {
+    padding: 20px;
+    max-width: 100%;
+  }
 }
