@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Define aquí tus nuevos colores base */
+  --primary-color: #6366f1;     /* Un tono índolo/morado moderno */
+  --secondary-color: #ec4899;   /* Un tono rosa/fucsia de acento */
+  --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+}
+
+/* Aplicar un fondo general a toda la página */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
