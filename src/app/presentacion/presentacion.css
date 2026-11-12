@@ -1,39 +1,30 @@
-/* Centrar todo en la tarjeta con un fondo sutil */
+/* Centrar la tarjeta */
 :host {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-color: #f4f6f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
 }
 
-/* Contenedor principal estilo "Card" */
+/* Contenedor principal (Tarjeta) */
 div {
-  background: #ffffff;
+  background: var(--card-bg);
   width: 100%;
   max-width: 450px;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15); /* Sombra sutil con tinte primario */
 }
 
-/* Estilo general para los párrafos */
-p {
-  color: #1e293b;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-/* Destacar el Nombre (primer párrafo) */
+/* Nombre principal */
 p:nth-child(1) {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #0f172a;
+  color: var(--primary-color);
 }
 
-/* Estilo para los subtítulos de listas y datos */
+/* Estilo para los subtítulos de listas */
 p:nth-child(4),
 p:nth-child(7),
 p:nth-child(10) {
@@ -42,39 +33,24 @@ p:nth-child(10) {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.5px;
-  color: #64748b;
+  color: var(--text-muted);
   margin-bottom: 8px;
 }
 
-/* Listas ordenadas transformadas en etiquetas (píldoras) */
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
+/* Píldoras de habilidades / intereses con tu color personalizado */
 ol li {
-  background-color: #e0e7ff;
-  color: #3730a3;
+  background-color: #ede9fe; /* Tono claro derivado de tu primario */
+  color: var(--primary-color);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
 }
 
-/* Estilo para los botones de redes sociales */
-.social-links {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
+/* Botones de redes sociales con el color de acento o principal */
 .social-btn {
   text-decoration: none;
-  background-color: #0f172a;
+  background-color: var(--primary-color);
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -84,13 +60,5 @@ ol li {
 }
 
 .social-btn:hover {
-  background-color: #334155;
-}
-
-/* Ajuste Responsivo (Media Query) */
-@media (max-width: 600px) {
-  div {
-    padding: 20px;
-    max-width: 100%;
-  }
+  background-color: var(--secondary-color); /* Cambia al color secundario al pasar el mouse */
 }
