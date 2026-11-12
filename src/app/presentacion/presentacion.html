@@ -7,4 +7,12 @@
             <li>{{ habilidad }}</li>
         }
         </ol>
+    <p>Edad: {{ edad }}</p>
+    <p>Idiomas: </p>
+        <ol>
+          @for(idioma of idiomas;track $index){
+            <li>{{ idioma }}</li>
+        }
+        </ol>
+  
 </div>
