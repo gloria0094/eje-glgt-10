@@ -33,4 +33,6 @@ export class Presentacion {
   [
     'Leer','Videos','Cantar','Escuchar música'
   ];
+  
+  githubUrl = 'https://github.com/gloria0094';
 }
